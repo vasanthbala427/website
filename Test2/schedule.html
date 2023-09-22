@@ -1,0 +1,79 @@
+<div class="slideshow-container">
+    <img class="slideshow-image" src="" alt="Slideshow Image" id="image-display">
+    <p id="slideshow-message"></p>
+  </div>
+  <input type="file" id="image-input" multiple style="display: none;">
+  <input type="datetime-local" id="schedule-datetime">
+  <button onclick="selectImages()">Select Images</button>
+  <button onclick="startSlideshow()">Start Slideshow</button>
+  
+  <script>
+    let images = [];
+    let currentImageIndex = 0;
+    let slideshowInterval = null;
+    let scheduledStartTime = null;
+    let scheduledEndTime = null;
+  
+    function selectImages() {
+      const input = document.getElementById('image-input');
+      input.click();
+  
+      input.addEventListener('change', () => {
+        images = [];
+        currentImageIndex = 0;
+  
+        for (let i = 0; i < input.files.length; i++) {
+          const file = input.files[i];
+          const imageURL = URL.createObjectURL(file);
+          images.push(imageURL);
+        }
+  
+        displayImage(currentImageIndex);
+      });
+    }
+  
+    function displayImage(index) {
+      const imageDisplay = document.getElementById('image-display');
+      imageDisplay.src = images[index];
+      imageDisplay.style.display = 'block';
+    }
+  
+    function parseScheduleDatetime() {
+      const scheduleDatetimeInput = document.getElementById('schedule-datetime');
+      const scheduledDatetimeString = scheduleDatetimeInput.value;
+  
+      const scheduledDatetime = new Date(scheduledDatetimeString);
+  
+      return scheduledDatetime;
+    }
+  
+    function startSlideshow() {
+      const scheduledDatetime = parseScheduleDatetime();
+  
+      scheduledStartTime = scheduledDatetime;
+      scheduledEndTime = new Date(scheduledDatetime.getTime() + 3600000); // 1 hour
+  
+      slideshowInterval = setInterval(nextImage, 5000);
+    }
+  
+    function nextImage() {
+      if (scheduledStartTime > Date.now() || scheduledEndTime < Date.now()) {
+        return;
+      }
+  
+      currentImageIndex++;
+      if (currentImageIndex >= images.length) {
+        currentImageIndex = 0;
+      }
+      displayImage(currentImageIndex);
+    }
+  
+    function endSlideshow() {
+      clearInterval(slideshowInterval);
+      document.getElementById('slideshow-message').textContent = 'Slideshow has ended.';
+      document.getElementById('slideshow-message').style.display = 'block';
+    }
+  
+    setInterval(nextImage, 5000);
+  </script>
+  

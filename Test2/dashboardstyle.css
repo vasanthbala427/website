@@ -1,0 +1,600 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 1440px;
+    height: 870px;
+    background: #E9FCFF;
+}
+
+.sidemenu{
+    width: 250px;
+    height: 870px;
+    flex-shrink: 0;
+    background: #ffffff;
+    box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.08);
+}
+/*     -----------------------Dashboard button---------------        */
+.dashbtn{
+    margin-top: 250px;
+    margin-left: 15px;
+    width: 220px;
+    height: 50px;
+    border-radius: 3px;
+    background: #DFF9FF;
+    border: none;
+    color: #32B1A2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.dashbtn svg{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    margin-left: -20px;
+}
+.dashbtn:hover {
+    background: #DFF9FF;
+    
+}
+/*     -----------------------   Media button---------------        */
+.mediabtn{
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 220px;
+    height: 50px;
+    border-radius: 3px;
+    background: #DFF9FF;
+    border: none;
+    color: #32B1A2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.mediabtn:hover {
+    background: #DFF9FF;
+    
+}
+.mediabtn svg{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    margin-left: -60px;
+}
+/*     -----------------------Layout button---------------        */
+.layoutbtn{
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 220px;
+    height: 50px;
+    border-radius: 3px;
+    background: #ffffff;
+    border: none;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.layoutbtn:hover {
+    background: #DFF9FF;
+    
+}
+.layoutbtn svg{
+    height: 16px;
+    width: 16px;
+    margin-right: 20px;
+    margin-left: -60px;
+}
+/*     ----------------------- Schedule button---------------        */
+.schedulebtn{
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 220px;
+    height: 50px;
+    border-radius: 3px;
+    background: #ffffff;
+    border: none;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.schedulebtn:hover {
+    background: #DFF9FF;
+    
+}
+.schedulebtn svg{
+    height: 16px;
+    width: 16px;
+    margin-right: 20px;
+    margin-left: -30px;
+}
+/*     ----------------------- Monitors button---------------        */
+.monitorbtn{
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 220px;
+    height: 50px;
+    border-radius: 3px;
+    background: #ffffff;
+    border: none;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.monitorbtn:hover {
+    background: #DFF9FF;
+    
+}
+.monitorbtn svg{
+    height: 17px;
+    width: 17px;
+    margin-right: 20px;
+    margin-left: -40px;
+}
+/*     -------------------------------------------------------------------- Content   ----------------------------------------------------        */
+.content{
+    position: relative;
+    
+    width: 1190px;
+    height: 870px;
+    margin-top: -870px;
+    margin-left: 300px;
+
+}
+.dashboard{
+    display: none;
+}
+.content h1{
+    padding-top: 100px;
+    color: #32B1A2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+/*     ----------------------- client box   ---------------        */
+.clientbox{
+    position: relative;
+    margin-top: 50px;
+    width: 450px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #9EF0FF;
+}
+.cname{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.cgreat{
+    color: #808080; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+/*     ----------------------- monitor status box   ---------------        */
+.monitorbox{
+    position: relative;
+    margin-top: 50px;
+    width: 450px;
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 18px -7px #B0B0B0;    
+}
+.monitorst{
+    position: relative;
+    padding-top: 30px;
+    padding-left: 40px;
+    color: #A1A1A1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.rectangle{
+    background: #D1D1D1;
+    width: 400px;
+    height: 1px;
+    margin-left: 25px;
+    flex-shrink: 0;
+}
+.monitorconn{
+    position: relative;
+    padding-top: 70px;
+    padding-left: 40px;
+    color: #0B697A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.monitorword{
+    position: relative;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 100px;
+    color: #A1A1A1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+/*     ----------------------- monitor column   ---------------        */
+.dashbtn{
+    background: #ffffff;
+    color: #000000;
+}
+.dashbtn svg{
+   fill: #000;
+}
+
+.media{
+    position: relative;
+    width: 1190px;
+    height: 870px;
+    margin-top: -870px;
+    margin-left: 50px;
+
+}
+.media h2{
+    padding-top: 100px;
+    color: #32B1A2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.rectanglemedia{
+    margin-top: 150px;
+    width: 350px;
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #32B1A2;
+}
+.rectanglemediadot{
+    margin-top: -340px;
+    margin-left: 25px;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    border: 2px dashed #FFF;
+    background: #32B1A2;
+}
+.rectanglemediadot svg{
+    position: absolute;
+    fill: #ffffff;
+    width: 180px;
+    height: 180px;
+    padding-top: 40px;
+    padding-left: 100px;
+    
+}
+.upload{
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: -150px;
+    padding-left: 80px;
+}
+.or{
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: -10px;
+    padding-left: 160px;
+}
+.filebtn{
+    width: 220px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #ffffff;
+    border: none;
+    font-size: 13px;
+    color: #32B1A2;
+    margin-left: 70px;
+}
+/*     -----------------------    Screen   ---------------        */
+.rectanglescreen{
+    position: relative;
+    margin-top: -400px;
+    margin-left: 500px;
+    width: 800px;
+    height: 600px;
+    border-radius: 5px;
+    background: rgba(193, 193, 193, 0.14);
+}
+.rectangletv{
+    position: absolute;
+    left: 600px;
+    top: 300px;
+    width: 600px;
+    height: 350px;
+    border: 8px solid #090505;
+    background: #000000;
+    box-shadow: 16px 14px 13px -2px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+}
+.rectangletv img {
+    width : 585px;
+    height: 335px;
+    object-fit: fill;
+    transition: transform 3ms ease;
+}
+.rectangletv video{
+    position: relative;
+    width : 585px;
+    height: 335px;
+    object-fit: fill;
+}
+.preview{
+    position: relative;
+    left: 700px;
+    margin-top: -70px;
+    bottom: 62px;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    background: #32B1A2;
+    color: #ffffff;
+    border: none;
+}
+.preview:hover{
+    background: #1c665d;
+}
+.push{
+    position: relative;
+    left: 850px;
+    margin-top: -70px;
+    bottom: 62px;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #32B1A2;
+    border: 2px solid #32B1A2 ;
+}
+.push:hover{
+    background: #ececec;
+}
+
+/*     ------------------------------------------    Responsive Design for Laptop   --------------------------        */
+
+@media only screen and (min-width: 992px) {
+    body{
+        width: 1040px;
+        height: 643px;
+        background: #E9FCFF;
+    }
+    
+    .sidemenu{
+        width: 150px;
+        height: 643px;
+    }
+    .dashbtn{
+        margin-top: 150px;
+        margin-left: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+        width: 130px;
+        height: 40px;
+    }
+    .dashbtn svg{
+        height: 20px;
+        width: 20px;
+        padding-left: 5px;
+        
+    }
+    .mediabtn{
+        margin-top: 30px;
+        margin-left: 10px;
+        padding-left: 20px;
+        font-size: 14px;
+        width: 130px;
+        height: 40px;
+    }
+    .mediabtn svg{
+        height: 20px;
+        width: 20px;
+        padding-left: 5px;
+    }
+    .layoutbtn{
+        margin-top: 30px;
+        font-size: 14px;
+        margin-left: 10px;
+        padding-left: 20px;
+        width: 130px;
+        height: 40px;
+    }
+    .layoutbtn svg{
+        height: 20px;
+        width: 20px;
+        padding-left: 5px;
+    }
+    .schedulebtn{
+        margin-top: 30px;
+        font-size: 14px;
+        margin-left: 10px;
+        padding-left: 20px;
+        width: 130px;
+        height: 40px;
+    }
+    .schedulebtn svg{
+        height: 20px;
+        width: 20px;
+        padding-left: 5px;
+    }
+    .monitorbtn{
+        margin-top: 30px;
+        font-size: 14px;
+        margin-left: 10px;
+        padding-left: 20px;
+        width: 130px;
+        height: 40px;
+    }
+    .monitorbtn svg{
+        height: 20px;
+        width: 20px;
+        padding-left: 5px;
+    }
+    .content{
+        position: relative;
+        width: 890px;
+        height: 643px;
+    }
+    .content h1{
+        padding-top: 250px;
+        margin-left: -100px;
+    }
+    .clientbox{
+        position: relative;
+        margin-top: 50px;
+        width: 400px;
+        height: 200px;
+        margin-left: -100px;
+    }
+    .monitorbox{
+        position: relative;
+        margin-top: -200px;
+        margin-left: 500px;
+        width: 450px;
+        height: 330px;  
+    }
+    .media{
+        position: relative;
+        width: 890px;
+        height: 643px;    
+    }
+    .media h2{
+        margin-top: 200px;
+        margin-left: -100px;
+    }
+    .rectanglemedia{
+        margin-top: 100px;
+        width: 250px;
+        height: 250px;
+        margin-left: -100px;
+    }
+    .rectanglemediadot{
+        margin-top: -250px;
+        margin-left: -85px;
+        width: 220px;
+        height: 220px;
+    }
+    .rectanglemediadot svg{
+        width: 150px;
+        height: 150px;
+        margin-left: -20px;
+        margin-top: -20px;
+        
+    }
+    .upload{
+        font-size: 12px;
+        margin-top: -120px;
+        margin-left: -135px;
+    }
+    .or{
+        font-size: 13px;
+        margin-top: -10px;
+        padding-left: 15px;
+    }
+    .filebtn{
+        width: 180px;
+        height: 20px;
+        font-size: 10px;
+        color: #32B1A2;
+        margin-left: -65px;
+    }
+    .rectanglescreen{
+        margin-top: -350px;
+        margin-left: 250px;
+        width: 700px;
+        height: 500px;
+    }
+    .rectangletv{
+        position: absolute;
+        left: 300px;
+        top: 150px;
+    }
+    .rectangletv img {
+        width : 585px;
+        height: 335px;
+        object-fit: cover;
+        transition: transform 3ms ease;
+    }
+    .rectangletv video{
+        position: absolute;
+        width : 585px;
+        height: 335px;
+        object-fit: cover;
+    }
+    .preview{
+        position: relative;
+        left: 350px;
+        margin-top: -50px;
+        bottom: 62px;
+        width: 100px;
+        height: 30px;
+        border-radius: 4px;
+    }
+    .push{
+        position: relative;
+        left: 550px;
+        margin-top: -50px;
+        bottom: 62px;
+        width: 100px;
+        height: 30px;
+        border-radius: 4px;
+        background: #ffffff;
+        color: #32B1A2;
+        border: 2px solid #32B1A2 ;
+    }
+  
+   
+
+   
+
+}

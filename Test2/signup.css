@@ -1,0 +1,80 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("NY-TSQ.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 1349px;
+    height: 643px;
+    text-align: center;
+}
+
+.signinpage{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 400px;
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #196c85;
+    background: rgba(0, 0, 0, 0.637);
+}
+
+h2 {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-left: 80px;
+    height: 30px;
+    margin-bottom: 10px;
+    color: #32cc8c;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 70%;
+    padding: 10px;
+    margin-left: 80px;
+    margin-bottom: 15px;
+    border: 1px solid #053d4b;
+    border-radius: 3px;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #32cc8c;
+    margin-top: 30px;
+    margin-left: 170px;
+    width: 150px;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #06b489;
+}
+
